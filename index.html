@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма введення даних</title>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form onsubmit="return false;">
+        1. ПІБ (ТТТТТТ Т.Т.):<br>
+        <input type="text" name="fullName" value="">
+        <br>
+        
+        2. Група (ТТ-ЧЧ):<br>
+        <input type="text" name="group" value="">
+        <br>
+        
+        3. Факультет (ТТТТ):<br>
+        <input type="text" name="faculty" value="">
+        <br> 
+        
+        4. Адреса (м. ЧЧЧЧЧЧ):<br>
+        <input type="text" name="address" value="">
+        <br>
+        
+        5. Telegram (@Т_ТТТТТ):<br>
+        <input type="text" name="telegram" value="">
+        <br>
+
+        <input type="hidden" name="hidden" value="ok">
+        <input type="submit" value="Надіслати" name="Submit" onClick="return validateForm(this.form)">
+    </form>
+</body>
+</html>
